@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Nome do Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* SISTEMA DE CADATRO DE USUÁRIOS FULSTACK, COM REACT
 
-## Available Scripts
+Descrição
 
-In the project directory, you can run:
+* Projeto full-stack para cadastro, listagem e gerenciamento de usuários. Possui frontend em React com formulários validados e backend em Node.js/Express, com persistência de dados em MySQL.
 
-### `npm start`
+Principais funcionalidades:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Cadastro de usuários com validação de campos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Listagem de usuários em tabela paginada.
 
-### `npm test`
+* Página de detalhes de cada usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Feedback visual e notificações (sucesso/erro) no frontend.
 
-### `npm run build`
+* Persistência de dados no MySQL via API REST.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Frontend: React, React Hook Form, Yup, Axios, React Router, React Toastify
+* Backend: Node.js, Express, MySQL, dotenv
+* Banco de Dados: MySQL
+* Ferramentas: Postman (teste de API), MySQL Workbench
+ESTRUTURA DO PROJETO
+FRONTBACK/
+├── backend/
+│   ├── db/
+│   │   ├── node_modules/
+│   │   ├── index.js
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   └── test-server.js
+│   ├── routes/
+│   │   └── records.js
+│   ├── index.js
+│   ├── package-lock.json
+│   ├── package.json
+│   └── node_modules/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── .env
+│   │   ├── App.js
+│   │   ├── fix-all-imports.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── routes.js
+│   ├── .gitignore
+│   ├── package-lock.json
+│   └── package.json
+      
+PASSO A PASSO
+* abrir o projeto pelo editor de codigo VSCODE
+* verificar se o servidor está rodando "npm start"
+* se estiver rodando você vai ver "http://localhost:3000/"
+* inserir os campos obrigatórios
+* vai salvar localmente no "localhost"
+* abrir o "xampp" para rodar o mysql, verificar se o "Actions" está em "stop", se estiver em "start" a porta não está rodando, se estiver rodando abra o MYSQL
+* abrir o "MYSQL Workbench" 
+* verificar se a tabela está criada para cadastrar os usuários dentro do banco com "ID, Name, email, age, birth_date, role, terms_accepted"
+* SHOW Tables;
+DESCRIBE usuarios;
+verificar se o banco está criado 
+* quando o banco está criando e inserir no "localhost"
+* verificar se foi cadastrado com sucesso
+* "USE mentebanco;"
+* "SELECT * FROM usuarios;"
+* se estiver tudo certo cadastrado quando o usuario for cadastrado no sistema, vai ser inserido no banco de dados "MYSQL"
