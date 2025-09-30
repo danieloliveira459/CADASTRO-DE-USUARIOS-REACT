@@ -57,8 +57,11 @@ FRONTBACK/
       
 PASSO A PASSO
 * abrir o projeto pelo editor de codigo VSCODE
-* verificar se o servidor está rodando "npm start"
-* se estiver rodando você vai ver "http://localhost:3000/"
+* E necessario rodar o frontend como o backend
+* pra rodar o front "cd frontend" "npm start"
+* para rodar o backennd e necessario encontrar o caminho da pasta "cd frontend/backend" "npm install" "node index.js
+* se estiver rodando o frontend  você vai ver "http://localhost:3000/"
+* quando o backend estiver rodando no terminal do código verá algo como "Servidor rodando na porta 3001"
 * inserir os campos obrigatórios
 * vai salvar localmente no "localhost"
 * abrir o "xampp" para rodar o mysql, verificar se o "Actions" está em "stop", se estiver em "start" a porta não está rodando, se estiver rodando abra o MYSQL
